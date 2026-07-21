@@ -30,18 +30,18 @@ public:
             else
                 t2.push(c);
         }
-        while(!t1.empty() && !t2.empty())
-        {
-            if(t1.top() != t2.top())
-                return false;
-            t1.pop();
-            t2.pop();
-        }
-        if(t1.empty() && t2.empty())
-            return true;
+        // while(!t1.empty() && !t2.empty())
+        // {
+        //     if(t1.top() != t2.top())
+        //         return false;
+        //     t1.pop();
+        //     t2.pop();
+        // }
+        // if(t1.empty() && t2.empty())
+        //     return true;
         
-        else
-            return false;
-        return true;
+        // else
+        //     return false;
+        return t1 == t2;
     }
 };
