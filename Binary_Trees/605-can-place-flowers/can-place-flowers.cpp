@@ -15,7 +15,7 @@ public:
                 if(a[i] == 0 && a[i+1] == 0)    
                 {
                     n--;
-                     if(n==0)return true;
+                    //  if(n==0)return true;
                     a[i]=1;
                 }
             }
@@ -24,7 +24,7 @@ public:
                 if(a[size-1] == 0 && a[size-2] == 0)
                 {
                     n--;
-                    if(n==0)    return true;
+                    // if(n==0)    return true;
                     a[i]=1;
                 }
 
@@ -34,10 +34,12 @@ public:
                 if(a[i] ==0 && a[i-1] == 0 && a[i+1] == 0)
                 {
                     n--;
-                    if(n==0)    return true;
+                    // if(n==0)    return true;
                     a[i]=1;
                 }
             }
+            if(n==0)    return true;
+
         }
         return false;
     }
